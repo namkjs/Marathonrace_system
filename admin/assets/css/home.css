@@ -1,0 +1,47 @@
+/* CSS để làm mờ phần background */
+.background {
+    background-image: url('../img/poster.png');
+    /* Đường dẫn đến hình ảnh */
+    background-size: cover;
+    /* Hiển thị ảnh với kích thước tối ưu */
+    background-repeat: no-repeat;
+    /* Không lặp lại ảnh */
+    height: 100vh;
+    /* Chiều cao bằng chiều cao của viewport */
+    position: relative;
+}
+
+/* Hiệu ứng mờ */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Màu đen với độ trong suốt 50% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Khung chữ nhật */
+.content {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'Your Font Name', sans-serif;
+    /* Đặt tên font chữ vào đây */
+    font-size: 48px;
+    /* Kích thước font */
+    color: #ffffff;
+    /* Màu chữ */
+    padding: 20px 30px;
+    /* Khoảng cách bên trong */
+    border: 2px solid #ffffff;
+    /* Đường viền */
+    border-radius: 10px;
+    /* Bo tròn góc */
+}
